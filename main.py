@@ -8,6 +8,6 @@ message = input("Digite a menssagem para ser exibida\n:")
 
 bot = Chatbot(name)
 bot.openBrowser()
-bot.SendLoopMessage("Barbie", 100)
+bot.SendLoopMessage(message, 100)
 
 print("[] finalized bot")
