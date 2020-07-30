@@ -1,21 +1,12 @@
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-import time
+from bot import Chatbot
 
-browser = webdriver.Chrome()
+print("[] initialized bot")
 
-browser.get('http://web.whatsapp.com/')
-time.sleep(30)
+name = input("Digite o nome do usuario para procurar\n ")
+message = input("Digite a menssagem para ser exibida\n ")
 
-messager = browser.find_element_by_class_name(
-    "_3FRCZ copyable-text selectable-text")
-send_button = browser.find_element_by_class_name("_1U1xa")
+bot = Chatbot(name)
 
-messager.send_keys("testando boot" + Keys.RETURN)
+bot.SendMessage(message)
 
-send_button.click()
-
-# elem = browser.find_element_by_name('p')  # Find the search box
-# elem.send_keys('seleniumhq' + Keys.RETURN)
-
-# browser.quit()
+print("[] finalized bot")
