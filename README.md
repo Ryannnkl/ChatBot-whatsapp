@@ -12,6 +12,7 @@
 ### O que utiliza?
 
 - **Ferramentas**
+  - Python
   - Selenium
   - Chromedriver
 
@@ -27,10 +28,10 @@ git clone https://github.com/Ryannnkl/Chatbot-whatsapp.git
 cd Chatbot-whatsapp
 
 python main.py
-
-## digite o nome do contato que você quer mandar a menssagem
-## Digite a menssagem
 ```
 
 > abra o whatsapp-web no seu celular e scannei o QRcode
-> espere achar o usuario (pode modificar o tempo de espera no arquivo [bot.py](https://github.com/Ryannnkl/ChatBot-whatsapp/blob/master/bot.py) na linha **- 17**)
+
+### `Importante!`
+
+- erros podem ocorrer caso digite algo errado, se isso acontecer abra o gerenciador de tarefas para finalizar o drive do chrome **ele não fecha sozinho nesse caso**
