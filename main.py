@@ -1,28 +1,31 @@
 from bot import Chatbot
+from selenium.common.exceptions import TimeoutException
 
 
 def initial(bot):
 
-    name = input("Digite o nome do usuario para procurar\n:")
-    bot.searchContact(name)
+    again = True
+    while again:
+        try:
+            name = input("Digite o nome do usuario para procurar\n:")
+            bot.searchContact(name)
+            again = False
+        except TimeoutException:
+            print("[404] usuario, não encontrado")
+    again = True
 
     message = input("Digite a menssagem para ser exibida\n:")
 
-    metod = int(
-        input(
-            "Digite uma opção:\nMenssagem simples [1]\nmultiplos envios [2]\n: "
-        ))
+    while again:
+        count = int(input("Digite a quantidade: "))
+        again = False
+        if count <= 0:
+            print("[400] Digite um numero maior que 0!")
 
-    if metod == 1:
-        bot.SendSimpleMessage(message)
-    if metod == 2:
-        count = int(input("digite a quantidade de vezes"))
-        bot.SendLoopMessage(message, count)
-    else:
-        print("Opção invalida")
+    bot.SendMessage(message, count)
 
 
-print("[] initialized bot")
+print("[] Bot iniciado")
 
 bot = Chatbot()
 bot.openBrowser()
@@ -35,4 +38,4 @@ while True:
         bot.driver.quit()
         break
 
-print("[] finalized bot")
+print("[] Bot finalizado")
