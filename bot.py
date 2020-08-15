@@ -26,6 +26,7 @@ class Chatbot:
         print("[] Usuario encontrado")
 
     def SendMessage(self, message, count):
+        start_time = time.time()
         for i in range(count):
             input_chat = WebDriverWait(self.driver, 5).until(
                 EC.presence_of_element_located((By.CLASS_NAME, '_3uMse')))
@@ -35,4 +36,6 @@ class Chatbot:
             input_chat.send_keys(message + Keys.RETURN)
             time.sleep(0.5)
             print("[] Mensagem enviada")
+        end_time = time.time()
         print("[] Fim das menssagens")
+        print("Tempo total:", round(end_time - start_time,2," segundos")
