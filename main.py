@@ -14,10 +14,10 @@ def initial(bot):
             print("[404] usuario, não encontrado")
     again = True
 
-    message = input("Digite a menssagem para ser exibida\n:")
+    message = input("Digite a menssagem  :")
 
     while again:
-        count = int(input("Digite a quantidade: "))
+        count = int(input("Digite a quantidade de menssagens: "))
         again = False
         if count <= 0:
             print("[400] Digite um numero maior que 0!")

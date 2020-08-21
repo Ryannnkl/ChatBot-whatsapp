@@ -5,6 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
 import time
+print("teste")
 
 
 class Chatbot:
@@ -35,7 +36,7 @@ class Chatbot:
             time.sleep(0.3)
             input_chat.send_keys(message + Keys.RETURN)
             time.sleep(0.5)
-            print("[] Mensagem enviada")
+            print("[] Menssagem enviada")
         end_time = time.time()
         print("[] Fim das menssagens")
-        print("Tempo total:", round(end_time - start_time,2," segundos")
+        print("Tempo total:", round(end_time - start_time, 2), " segundos")
