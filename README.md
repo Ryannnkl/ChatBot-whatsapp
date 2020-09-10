@@ -34,6 +34,6 @@ python main.py
 
 ### `Importante!`
 
-- erros podem ocorrer caso digite algo errado, se isso acontecer abra o gerenciador de tarefas para finalizar o drive do chrome **ele não fecha sozinho nesse caso**
-- caso seu chrome não abra seja porque o drive que utilizo não seja compativel com a sua versão procure a versão do driver compativel com o seu navegador [AQUI](https://chromedriver.chromium.org/downloads)
-- para saber a versão ddo seu chrome é so ir nas configurações no navegadpr
+- erros podem ocorrer caso digite algo errado, abra o gerenciador de tarefas para finalizar o drive do chrome **ele não fecha sozinho nesse caso**
+- caso seu chrome não abra talvez seja porque o drive que utilizo não seja compativel com a sua versão procure a versão do driver compativel com o seu navegador [AQUI](https://chromedriver.chromium.org/downloads)
+- para saber a versão do seu chrome é so ir nas configurações no navegador
