@@ -25,7 +25,7 @@ def initial(bot):
     bot.SendMessage(message, count)
 
 
-print("[] Bot iniciado")
+print("[] iniciando...")
 
 bot = Chatbot()
 bot.openBrowser()
@@ -38,4 +38,4 @@ while True:
         bot.driver.quit()
         break
 
-print("[] Bot finalizado")
+print("[] finaliado!")
