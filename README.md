@@ -30,7 +30,7 @@ cd Chatbot-whatsapp
 python main.py
 ```
 
-> abra o whatsapp-web no seu celular e scannei o QRcode
+> abra a ferramenta do ``whatsapp-web`` no seu whatsapp e scannei o QRcode
 
 ### `Importante!`
 
